@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "unduplicate-itunes"
-version = "0.1.0"
+version = "1.0.0"
 description = "Remove duplicated iTunes song files from your computer"
 authors = ["Ariff Jeff <ariffjeff@icloud.com>"]
 license = "MIT"
