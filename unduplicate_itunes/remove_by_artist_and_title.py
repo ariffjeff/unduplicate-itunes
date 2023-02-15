@@ -43,9 +43,9 @@ def main() -> None:
 
 def log_output(dirs_to_delete, duplicates, DUPLICATES_TOTAL):
 
-  print("Deleted", len(dirs_to_delete), "directories containing only duplicate files.")
-  print("Deleted", len(duplicates), "individual files.")
-  print("Deleted", DUPLICATES_TOTAL, "total duplicate files.")
+  print("Moved", len(dirs_to_delete), "directories containing only duplicate files to trash.")
+  print("Moved", len(duplicates), "individual files to trash.")
+  print("Moved", DUPLICATES_TOTAL, "total duplicate files to trash.")
 
   timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
   LOG = "deleted_duplicate_songs_{}.log".format(timestamp)
@@ -58,20 +58,20 @@ def log_output(dirs_to_delete, duplicates, DUPLICATES_TOTAL):
     
     # directories of files
     i = 1
-    print("Deleted", len(dirs_to_delete), "directories containing only duplicate files.")
+    print("Moved", len(dirs_to_delete), "directories containing only duplicate files to trash.")
     for dir in dirs_to_delete:
       print(i, ":", dir)
       i += 1
     
     # individual files
     i = 1
-    print("\nDeleted", len(duplicates), "individual files.")
+    print("\nMoved", len(duplicates), "individual files to trash.")
     for f in duplicates:
       print(i, ":", Path(f).name)
       print(i, ":", "Path:", Path(f))
       i += 1
 
-    print("\nDeleted", DUPLICATES_TOTAL, "total duplicate files.")
+    print("\nMoved", DUPLICATES_TOTAL, "total duplicate files to trash.")
 
   sys.stdout = old_stdout
   print("Log output:", LOG)
