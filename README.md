@@ -1,4 +1,7 @@
+
 # unduplicate-itunes
+[![Upload Python Package](https://github.com/ariffjeff/unduplicate-itunes/actions/workflows/python-publish.yml/badge.svg)](https://github.com/ariffjeff/unduplicate-itunes/actions/workflows/python-publish.yml)
+
 Moves duplicate song files from your iTunes music directory to the trash.
 
 Given that iTunes doesn't automatically remove missing songs (that you have deleted because they are duplicates), you will still need to manually remove the missing song entries from iTunes itself.
