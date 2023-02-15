@@ -20,7 +20,9 @@ pip install unduplicate-itunes
 ```
 ## Usage
 ### Using [remove_by_artist_and_title.py](/unduplicate_itunes/remove_by_artist_and_title.py)
+`cd` into any directory (the log file will be dumped here)
 ```
+python
 from unduplicate_itunes import remove_by_artist_and_title as undup
 undup.main()
 ```
